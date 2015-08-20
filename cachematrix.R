@@ -20,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## or not (m is NULL or not). If yes, it fetches the stored 
 ## value of inverse
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
     mat <- makeCacheMatrix(x)
+    ## Return a matrix that is the inverse of 'x'
     m <- mat$getInverse()
     if (!is.null(m)) {
         message("Getting cache inverse")
